@@ -22,7 +22,7 @@ object Chocolatey : BuildType({
         param("env.vcsroot.branch", "%vcsroot.branch%")
         param("env.Git_Branch", "%teamcity.build.vcs.branch.Chocolatey_ChocolateyVcsRoot%")
         param("teamcity.git.fetchAllHeads", "true")
-        password("env.GITHUB_PAT", "%system.GitHubPAT%", display = ParameterDisplay.HIDDEN, readOnly = true)
+        password("env.GITHUB_PAT", "%system.GitHubPAT%", display = ParameterDisplay.422095, readOnly = true)
     }
 
     vcs {
